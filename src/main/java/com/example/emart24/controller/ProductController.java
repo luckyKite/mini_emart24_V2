@@ -24,7 +24,6 @@ public class ProductController {
   public Product getProductDetail(@PathVariable Long id) {
     return productService.getProductDetail(id);
   }
-
   //단어로 상품 검색하기
   @GetMapping("/search")
   public List<Product> getSearchList(@RequestParam String q) {
